@@ -1,0 +1,19 @@
+# test_legal_classifier.py
+import unittest
+from legal_test_classifier import LegalTestClassifier
+
+class TestLegalTestClassifier(unittest.TestCase):
+    def setUp(self):
+        self.classifier = LegalTestClassifier()
+
+    def test_contract_classification(self):
+        self.assertEqual(self.classifier.classify('This is a contract agreement.'), 'Contract')
+
+    def test_policy_classification(self):
+        self.assertEqual(self.classifier.classify('This is a policy document.'), 'Policy')
+
+    def test_other_classification(self):
+        self.assertEqual(self.classifier.classify('This is a legal notice.'), 'Other')
+
+if __name__ == '__main__':
+    unittest.main()

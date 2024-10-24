@@ -1,0 +1,17 @@
+# legal_test_classifier.py
+class LegalTestClassifier:
+    def classify(self, legal_text):
+        """
+        Classify the given legal text into categories (e.g., contract, policy, etc.)
+        """
+        if 'contract' in legal_text.lower():
+            return 'Contract'
+        elif 'policy' in legal_text.lower():
+            return 'Policy'
+        else:
+            return 'Other'
+        
+if __name__ == "__main__":
+    classifier = LegalTestClassifier()
+    sample_text = input("Enter the legal text for classification: ")
+    print(f"Classified as: {classifier.classify(sample_text)}")

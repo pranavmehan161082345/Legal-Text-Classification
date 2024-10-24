@@ -1,0 +1,22 @@
+# Legal Test Classifier
+
+This project classifies legal texts into categories like Contract, Policy, and Other.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your_username/legal-test-classifier.git
+    cd legal-test-classifier
+    ```
+
+2. Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+Run the classifier:
+```bash
+python legal_test_classifier.py
